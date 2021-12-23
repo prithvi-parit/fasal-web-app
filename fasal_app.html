@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e61f, 0 0 40px #00bb5d, 0 0 50px #00e686, 0 0 60px #26e600, 0 0 70px #26e600;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4dffa6, 0 0 40px #4dff88, 0 0 50px #0ce731, 0 0 60px #4dff88, 0 0 70px #5cff4d, 0 0 80px #4dff4d;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">WEATHER FORECASTING APP</h1>
+
+</body>
+</html>
+
+<body>
+
+
+
+
+</body>
+</html>
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img1 {
+  /* The image used */
+  background-image: url("final.jpg");
+
+  min-height: 280px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+/* input */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <script>
+    function lw1()
+    {
+
+                  var xhr=new XMLHttpRequest();
+                  var j=document.getElementById("n2").value
+                  alert("Given input is: " + j);
+                  xhr.open("GET","http://65.2.146.195/cgi-bin/temperature.py?x=" + j, true);
+
+                  xhr.send();
+
+                  xhr.onload=function()
+                  {
+                  var output=xhr.responseText;
+                  document.getElementById("k1").innerHTML=output;
+
+
+
+    }
+
+  }
+  </script>
+ <!-- <h1>Predict the Temperature</h1>-->
+<div class="bg-img1">
+        <h1>Predict the Temperature</h1>
+
+    <h2>Enter Observation Value:</h2>
+
+   <!-- <label for="email"><b>value</b></label>-->
+    <input id="n2" type="text" placeholder="Enter the value" name="email" required>
+
+   <!-- <label for="psw"><b>Password</b></label>*/
+   /* <input type="password" placeholder="Enter Password" name="psw" required>-->
+
+    <button type="submit" onclick="lw1();" class="btn">Submit</button>
+
+    <html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
+    <p>Temperature predicted is..</p>
+    <h1 id="k1">0.00</h1>
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("final.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+/* input */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 5.9;
+}
+
+.btn:hover {
+  opacity: 10;
+}
+</style>
+</head>
+<body>
+<script>
+  function lw()
+  {
+
+                var xhr=new XMLHttpRequest();
+                var i=document.getElementById("n1").value
+                alert("Given input is: " + i);
+                xhr.open("GET","http://65.2.146.195/cgi-bin/humidity.py?x=" + i, true);
+
+                xhr.send();
+
+                xhr.onload=function()
+                {
+                var output=xhr.responseText;
+                document.getElementById("d11").innerHTML=output;
+
+
+
+  }
+
+}
+</script>
+<!--<h1>Predict the Humidity</h1>-->
+<div class="bg-img">
+        <h1>Predict the Humidity</h1>
+  <!--<form onsubmit="lw();" class="container">-->
+    <h2> Enter Observation Value:</h2>
+
+   <!-- <label for="email"><b>value</b></label>-->
+    <input id="n1" type="text" placeholder="Enter the value" name="email" required>
+
+   <!-- <label for="psw"><b>Password</b></label>*/
+   /* <input type="password" placeholder="Enter Password" name="psw" required>-->
+
+    <button  class="btn" onclick="lw();" >Submit</button>
+
+    <html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
+    <p>Humidity predicted is..</p>
+    <h1 id="d11">0.00</h1>
+
+  </div>
+</div>
+<!--</form>-->
+  </div>
+
+
+</body>
+</html>
